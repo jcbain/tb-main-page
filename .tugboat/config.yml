@@ -2,7 +2,7 @@ services:
   nginx:
     image: tugboatqa/nginx
     default: true
-
+    subpath: true
     commands:
       init:
         - curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
@@ -12,4 +12,4 @@ services:
 
       build:
         - npm run build
-        - ln -snf "${TUGBOAT_ROOT}/build/" "${DOCROOT}"
+        - ln -snf "${TUGBOAT_ROOT}/build" "${DOCROOT}"
