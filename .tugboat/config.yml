@@ -12,4 +12,4 @@ services:
 
       build:
         - npm run build
-        - ln -snf "${TUGBOAT_ROOT}/build" "${DOCROOT}"
+        - ln -snf "${TUGBOAT_ROOT}/build/" "${DOCROOT}"
