@@ -5,5 +5,4 @@ services:
     subpath: true
     commands:
       build:
-        - npm run build
         - ln -snf "${TUGBOAT_ROOT}/build" "${DOCROOT}"
