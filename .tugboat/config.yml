@@ -3,6 +3,7 @@ services:
     image: tugboatqa/nginx
     default: true
     subpath: true
+    subpath_map: true
     commands:
       build:
         - ln -snf "${TUGBOAT_ROOT}/build" "${DOCROOT}"
