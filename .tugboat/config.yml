@@ -6,3 +6,5 @@ services:
     commands:
       build:
         - ln -snf "${TUGBOAT_ROOT}/build" "${DOCROOT}"
+    urls:
+      - /
